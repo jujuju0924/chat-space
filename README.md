@@ -38,4 +38,4 @@
 
 ### Association
 - belongs_to :group
-- belongs_to :groups_users
+- belongs_to :groups_user
