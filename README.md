@@ -1,4 +1,6 @@
 ## messagesテーブル
+|Column|Type|Options|
+|------|----|-------|
 |body|text|
 |image|string|
 |user_id|integer|null: false, foreign_key: true|
@@ -9,6 +11,8 @@
 - belongs_to :user
 
 ## usersテーブル
+|Column|Type|Options|
+|------|----|-------|
 |name|string|null: false, add_index: true|
 |email|string|null: false, unique: true|
 
@@ -18,6 +22,8 @@
 - has_many :groups,through:group.users
 
 ## groupsテーブル
+|Column|Type|Options|
+|------|----|-------|
 |group_name|string|null: false, unique: true
 
 ## Association
@@ -25,6 +31,8 @@
 - has_many :groups_users
 - has_many :groups,through:group.users
 ## groups_usersテーブル
+|Column|Type|Options|
+|------|----|-------|
 |user_id|integer|null: false, foreign_key: true|
 |group_id|integer|null: false, foreign_key: true|
 
