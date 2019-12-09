@@ -64,27 +64,27 @@
 }
 
 
-.mainchat{
+.main__chat{
   float:right;
  
- .maingroup.info{
+ .__group.info{
   background-color:ffffff;
   height:100px;
   padding:0px 40px;
   display:flex;
   justify-content:space-between;
    
-  .main_left{
+  .__left{
     padding-top:35px;
    }
 
-    .main_box{
+    .__box{
      color:#333333;
      font-size:20px;
      margin-bottom:15px;
     }
 
-    .main_box2{
+    .__box2{
     color:#999999;
     font-size:12px;
     }
