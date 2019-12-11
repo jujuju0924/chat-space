@@ -11,8 +11,10 @@
           = link_to edit_user_path(current_user) do
             = icon('fas', 'cog', class: 'icon')
   .group
-    .group_list
-      .group_name1
-        techcamp
-      .group_name2
-        まだメッセージがありません
+    - current_user.groups.each do |group|
+      .group_list
+        = link_to group_messages_path(group) do
+          .group_name1
+            = group.name
+          .group_name2
+            = group.show_last_message
