@@ -3,6 +3,7 @@
   background-color:#2f3e51;
   width:300px;
   height: calc(100vh);
+  overflow: scroll;
   
  .username{
   background-color:#253141;
@@ -129,6 +130,10 @@
   height: calc(100vh - 190px);
   overflow: scroll;
   .message {
+    img.lower-message__image{
+      width:100px;
+      height:100px;
+    }
     .upper-message {
       display: flex;
       &__user-name {
@@ -148,6 +153,7 @@
         color:black;
         font-size: 14px;
         margin-bottom: 40px;
+       
       }
     }
   }   
